@@ -88,17 +88,9 @@ def select(event):
     textarea.tag_add("bt2", "sel.first", "sel.last")
     textarea.tag_config("bt2", font=Font_tuple)
 
-    #textarea.configure(font=Font_tuple)
 
-# def font_style(event):
-#     return combobox_style.get()
-#
-#
-# def font_size(event):
-#     return combobox_size.get()
-#
-# def font_family(event):
-#     return combobox_font.get()
+
+
 
 root.wm_resizable(False,False)
 
@@ -147,7 +139,7 @@ file_menu.add_command(label="New")
 file_menu.add_command(label="Open", command=lambda: function.open_file())
 file_menu.add_command(label="Save", command=lambda: function.save(textarea.get(1.0, END)))
 file_menu.add_command(label="Save As", command=lambda: function.save_file_as(textarea.get(1.0, END)))
-#file_menu.add_command(label="Format", command=lambda: font_box())
+
 file_menu.add_command(label="Exit", command=root.destroy)
 
 textarea.pack()
